@@ -20,7 +20,7 @@ OVER_WORK_TIME = params['OVER_WORK_TIME']
 OVER_TIME = params['OVER_TIME']
 
 def str_to_absmin(t_str):
-    a = map(int, t_str.split(':'))
+    a = list(map(int, t_str.split(':')))  # list() for python3 compatible
     return a[0]*60 + a[1]
 
 def duration(start, end):
