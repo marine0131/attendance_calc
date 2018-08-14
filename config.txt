@@ -1,0 +1,11 @@
+{
+"FILE":                 "test.xls",
+"MONTH":                "2018/08",
+"ON_WORK_TIME":         "8:30",
+"LUNCH_TIME":           "12:00",
+"REST_TIME":            "12:30",
+"AFTERNOON_WORK_TIME":  "13:30",
+"OFF_WORK_TIME":        "18:00",
+"OVER_WORK_TIME":       "18:30",
+"OVER_TIME":            "20:00"
+}
