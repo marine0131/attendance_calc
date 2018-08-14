@@ -44,6 +44,7 @@ def proc_time(time_list, is_weekend=False):
 
     if is_weekend:
         over_duration = duration(start, end)
+        over_duration = round(over_duration/60.0, 1) # * 2)/2.0
 
         return tag, start_end, work_duration, over_duration
 
@@ -69,7 +70,8 @@ def proc_time(time_list, is_weekend=False):
             late = start_min - str_to_absmin(ON_WORK_TIME)
             tag = "late: " + str(late) + "min"
             if late < 30: # late but worktime is full
-                start = "8:30"
+                late = 0
+                start = ON_WORK_TIME
 
             if  late > 60:
                 tag = "absence: " + str(late) + "min"
